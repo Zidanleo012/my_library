@@ -1,11 +1,21 @@
 const myLibrary = []
 
-function Book(title, author, pages, read) {
-    this.title = title,
-        this.author = author,
-        this.pages = pages,
-        this.isRead = read
+class Book {
+    constructor(title, author, pages, isRead) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.isRead - isRead
+    }
 }
+
+// function Book(title, author, pages, read) {
+//     
+//         this.title = title,
+//         this.author = author,
+//         this.pages = pages,
+//         this.isRead = read
+// }
 
 function getReadStatus(book) {
     return book.isRead ? 'Already read' : 'Haven\'t been read';
